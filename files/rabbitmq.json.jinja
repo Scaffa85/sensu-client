@@ -1,0 +1,9 @@
+{
+  "rabbitmq": {
+    "host": "{{pillar['sensu_host'] }}",
+    "port": 5672,
+    "vhost": "/sensu",
+    "user": "sensu",
+    "password": "{{pillar['sensu_rabbit_pw']}}"
+  }
+}

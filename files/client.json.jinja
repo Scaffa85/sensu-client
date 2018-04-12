@@ -1,0 +1,21 @@
+{% set node_id = salt['grains.get']('host') -%}
+{% set node_ip4 = salt['grains.get']('fqdn_ip4') -%}
+
+{
+  "client": {
+    "name": "{{ node_id }}",
+    "address": "{{ node_ip4 }}",
+    "subscriptions": [
+{%- for sub in grains['sensu_subscriptions'] %}
+    "{{sub}}",
+{%- endfor  %}
+    "linux"
+    ],
+    "socket": {
+      "bind": "0.0.0.0",
+      "port": 3030
+    }
+  }
+}
+
+
