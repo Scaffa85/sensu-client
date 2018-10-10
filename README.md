@@ -20,7 +20,7 @@ sensu_rabbit_pw
 
 ### Who do I talk to? ###
 
-* Craig Simpson +44-2920020386 x386
-* craig.simpson@thevoicefactory.co.uk
+* Craig Simpson
+* csimpson1985@gmail.com
 
 
